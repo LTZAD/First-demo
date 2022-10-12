@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(bg.png) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Fira Code',sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+.content p{
+    width: 700px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.cursor{
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #c6c6c6;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: .1s;
+}
+.cursor2{
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background: #c6c6c6;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: .17s;
+}
+.content:hover ~ .cursor{
+    transform: translate(-50%,-50%) scale(1.5);
+    background-color: #c6c6c6;
+    opacity: .5;
+    transition: 0.2s;
+}
+.content:hover ~ .cursor2{
+    opacity: 0;
+    transition: 0.2s;
+}
