@@ -62,7 +62,7 @@ body
     transform: skewX(15deg);
     transition: 0.5s;
     filter: blur(30px);
-    transition: 1.5s;
+    transition: 1.2s;
 }
 .container .box:hover:before,
 .container .box:hover:after
